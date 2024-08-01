@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Enter your details</h1>
+        <h2>Enter your name</h2>
+        <input type="text" id="myname">
+        <h2>Enter your email</h2>
+        <input type="email" id="myemail">
+        <h2> Enter your passwword</h2>
+        <input type="password" id="mypassword">
+        <button onclick="info()">submit</button>
+    </center>
+
+
+
+<script>
+
+function info() {
+    var name;
+    var email;
+    var password;
+    name = document.getElementById("myname").value;
+    email = document.getElementById("myemail").value;
+    password = document.getElementById("mypassword").value;
+    alert("Hello " + name + " your email is " + email + " your password is " + password);
+    alert("Thanks for submitting your details we will get back to you")
+}
+
+
+
+
+</script>
+
+
+
+</body>
+</html>
